@@ -10,6 +10,6 @@ RUN \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/ \
   && \
-  pip install key-mon
+  pip install --no-cache-dir key-mon
 
 ENTRYPOINT [ "key-mon" ]
